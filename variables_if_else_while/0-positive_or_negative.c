@@ -23,7 +23,7 @@ int main(void)
 		printf("%i is zero\n", n);
 	} else
 	{
-		printf("%i i²inegative\n", n);
+		printf("%i is inegative\n", n);
 	}
 	return (0);
 }
