@@ -1,36 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <stdlib.h> // For rand() and srand()
+#include <time.h>   // For time()
 
-/**
- *  * main - Entry point
- *   *
- *    * Description: This function serves as the entry point to the program.
- *     * It generates a random number and prints information about its ld.
- *      *
- *       * Return: Always 0 (Success)
- *        **/
-int main(void)
-{
-/* Your main function code here */
-	int n, ld;
+int main(void) {
+    int n, lastDigit;
 
-	srand(time(0));
-		    n = rand() - RAND_MAX / 2;
-		    ld = n % 10;
+    // Seed the random number generator
+    srand(time(NULL));
 
-	if (ld > 5)
-	{
-		printf("ld of %i is %i and is greater than 5\n", n, ld);
-	}
-	else if (ld == 0)
-	{
-		printf("ld of %i is %i and is 0\n", n, ld);
-	}
-	else if (ld < 6 && ld != 0)
-	{
-		printf("ld of %i is %i and is less than 6 and not 0\n", n, ld);
-	}
+    // Generate a random number (you don't need to understand this part)
+    n = rand();
 
-	return (0);
+    // Extract the last digit of n
+    lastDigit = n % 10;
+
+    // Print the desired output
+    printf("Last digit of %d is: %d\n", n, lastDigit);
+
+    return 0;
 }
