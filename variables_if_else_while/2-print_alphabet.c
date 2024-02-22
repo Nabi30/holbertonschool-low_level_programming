@@ -1,14 +1,16 @@
 #include <stdio.h>
 
+/**
+ * main - main function
+ *
+ * Return: alaways (0)
+ */
+
 int main(void)
 {
-
-		Print the aiphabet from 'a' to 'z'
-			for (char c = 'a'; c <= 'z'; ++c) 
+	char c;
+	for (c = 'a'; c <= 'z'; c++)
 		putchar(c);
-
-		Print a newline character
-		putchar('\n');
-
+	putchar('\n');
 	return (0);
 }
