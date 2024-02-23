@@ -3,10 +3,12 @@
 int main(void)
 {
     /* Print single digit numbers from 0 to 9 */
-putchar('0');
-putchar('1' + 1); /* Equivalent to '2'*/
+int i;
+for (i = 0; i < 10; i++)
+    /* code */
+putchar(i + '0');
+
 putchar('\n');
-    /* New line */
+
 return (0);
 }
-
