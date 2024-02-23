@@ -2,8 +2,11 @@
 #include <time.h>
 /* Added the following header for printf */
 #include <stdio.h>
-
-/* betty style doc for function main goes there */
+/**
+ * main - main function
+ *
+ * Return: alaways (0)
+ */
 int main(void)
 {
 	int n;
