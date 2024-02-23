@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main - main function
+ *
+ * Return: alaways (0)
+ */
 int main(void)
 {
 /* Print single digit numbers from 0 to 9 */
