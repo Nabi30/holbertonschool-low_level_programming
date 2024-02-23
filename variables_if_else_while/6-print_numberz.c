@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/* betty style doc for function main goes there */
 int main(void)
 {
     /* Print single digit numbers from 0 to 9 */
