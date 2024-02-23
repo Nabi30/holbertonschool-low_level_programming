@@ -1,9 +1,4 @@
 #include <stdio.h>
-/**
- * main - main function
- *
- * Return: alaways (0)
- */
 
 int main(void)
 {
