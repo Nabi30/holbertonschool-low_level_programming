@@ -1,17 +1,21 @@
 #include "main.h"
+
 /**
- * * main - check 1-alphabet
+ * print_alphabet - Prints the lowercase alphabet followed by a new line
  *
- * Return: Always 0.
+ * Description:
+ * This function iterates through the lowercase letters from 'a' to 'z'
+ * and prints each character using the _putchar function. After printing
+ * all the letters, it adds a newline character to complete the output.
  */
 void print_alphabet(void)
-/*create a string with _putchar and a new lin*/
 {
-char c = 'a';
-while (c <= 'z')
+char letter = 'a';
+while (letter <= 'z')
 {
-_putchar(c);
-c++;
+_putchar(letter);/* Print the current letter*/
+letter++;/* Move to the next letter*/
 }
-_putchar('\n');
+_putchar('\n');/* Print a newline character*/
 }
+
