@@ -24,4 +24,3 @@ a[c] = str[c];
 a[c] = '\0';
 return (a);
 }
-
