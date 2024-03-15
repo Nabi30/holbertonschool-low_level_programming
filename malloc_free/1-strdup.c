@@ -2,25 +2,51 @@
 #include <stdlib.h>
 
 /**
- *_strup - duplciate a string using malloc
- * @str: string to duplicate
-*Return: pointer to new duped string
+* _strlen - return length of a string
+*
+* @s: char type
+* Return:  length of string
 */
-char *_strdup(char *str)
+int _strlen(char *s)
 {
-char *a;
-int i, c;
+int a;
 
-if (str == NULL)
-return (NULL);
-for (i = 0; str[i] != '\0'; i++)
+for (a = 0; s[a] != '\0'; a++)
+{
 
-a = malloc(i * sizeof(*a) + 1);
-if (a == NULL)
-return (NULL);
-
-for (c = 0; c < i; c++)
-a[c] = str[c];
-a[c] = '\0';
+}
 return (a);
 }
+
+/**
+* *_strdup - function to return pointer to string
+* @str: pointer to string array input
+* Return: pointer to string created
+*/
+
+char *_strdup(char *str)
+{
+char *ptr;
+int size;
+int x;
+
+if (str == NULL)
+{
+return (NULL);
+}
+size = _strlen(str) + 1;
+ptr = malloc(size *sizeof(char));
+
+x = 0;
+while (x < size)
+{
+if (ptr == NULL)
+{
+return (NULL);
+}
+ptr[x] = str[x];
+x++;
+}
+return (ptr);
+}
+
