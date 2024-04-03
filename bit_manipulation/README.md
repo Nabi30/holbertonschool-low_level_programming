@@ -2,7 +2,9 @@
 # <p align="center">C - Bit manipulation</p>
 
 
-<p align="center">Bit manipulation in C involves using bitwise operators to directly interact with the individual bits of data types. It’s a powerful technique that allows for efficient low-level data processing. 
+<p align="center">Bit manipulation in C involves using bitwise operators to directly interact with the individual bits of data types. It’s a powerful technique that allows for efficient low-level data processing.</p>
+
+
     **Here’s a brief overview of the bitwise operators in C:**
 
 -AND (&): Sets each bit to 1 if both bits are 1.
@@ -10,9 +12,8 @@
 -XOR (^): Sets each bit to 1 if only one of the two bits is 1.
 -NOT (~): Inverts all the bits.
 -Left Shift (<<): Shifts all bits to the left, which is equivalent to multiplying by 2.
--Right Shift (>>): Shifts all bits to the right, which is equivalent to dividing by 2.</p>
+-Right Shift (>>): Shifts all bits to the right, which is equivalent to dividing by 2.
 
-#
 # <p>Here’s an example demonstrating some of these operators:</p>
 
 ```
