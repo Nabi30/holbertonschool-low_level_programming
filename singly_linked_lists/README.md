@@ -2,7 +2,6 @@
 # <p align="center">C - Singly linked lists</p>
 
 
-# <p align="center">Project description</p>
 
 <p align="center">Linked Lists vs Arrays:
 
@@ -22,69 +21,3 @@ The tail is the last box and its map points to “Nowhere” (NULL), indicating 
 Using the Linked List:
 To add a box, just change the map in the previous box to point to your new box.
 To remove a box, change the map in the box before it to skip over the one you’re removing and point to the next one after it.</p>
-
-<p>
-#include <stdio.h>
-#include <stdlib.h>
-
-// Define the Node structure
-typedef struct Node {
-    int value;
-    struct Node* next;
-} Node;
-
-// Function to create a new Node
-Node* createNode(int value) {
-    Node* newNode = (Node*)malloc(sizeof(Node));
-    newNode->value = value;
-    newNode->next = NULL;
-    return newNode;
-}
-
-// Function to append a Node to the linked list
-void append(Node** head, int value) {
-    Node* newNode = createNode(value);
-    if (*head == NULL) {
-        *head = newNode;
-    } else {
-        Node* current = *head;
-        while (current->next != NULL) {
-            current = current->next;
-        }
-        current->next = newNode;
-    }
-}
-
-// Function to print the linked list
-void printList(Node* node) {
-    while (node != NULL) {
-        printf("%d -> ", node->value);
-        node = node->next;
-    }
-    printf("NULL\n");
-}
-
-int main() {
-    Node* head = NULL;
-
-    // Add some values to the linked list
-    append(&head, 1);
-    append(&head, 2);
-    append(&head, 3);
-
-    // Print the linked list
-    printList(head);
-
-    // Free the allocated memory
-    Node* current = head;
-    Node* next;
-    while (current != NULL) {
-        next = current->next;
-        free(current);
-        current = next;
-    }
-
-    return 0;
-}
-</p>
-# <p align="center">This C program defines a Node structure with an int value and a pointer to the next Node. It includes functions to create a new node, append a node to the end of the list, and print the list. The main function demonstrates how to use these functions to create a linked list, add nodes to it, and then print and free the list. Remember to always free the memory you’ve allocated when you’re done with it to prevent memory leaks. If you have any questions or need further assistance, feel free to ask!</p>
