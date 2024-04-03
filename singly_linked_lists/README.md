@@ -2,7 +2,6 @@
 # <p align="center">C - Singly linked lists</p>
 
 
-# <p align="center">Project description</p>
 
 <p align="center">Linked Lists vs Arrays:
 
