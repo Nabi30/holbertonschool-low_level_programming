@@ -1,5 +1,5 @@
 
-# <p align="center">C - Singly linked lists</p>
+# <p align="center">Structure of a Doubly Linked List</p>
 
 
 
