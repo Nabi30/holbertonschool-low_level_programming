@@ -23,7 +23,7 @@ Using the Linked List:
 To add a box, just change the map in the previous box to point to your new box.
 To remove a box, change the map in the box before it to skip over the one you’re removing and point to the next one after it.</p>
 
-<p align="center">#include <stdio.h>
+<p>#include <stdio.h>
 #include <stdlib.h>
 
 // Define the Node structure
