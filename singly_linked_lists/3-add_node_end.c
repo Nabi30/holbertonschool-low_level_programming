@@ -3,12 +3,26 @@
 #include <stdlib.h>
 
 /**
-* add_node_end - Adds a new node at the end of a list_t list.
-* @head: A double pointer to the head of the list_t list.
-* @str: The string to be duplicated and added to the list.
-*
-* Return: The address of the new element, or NULL if it failed.
-*/
+ * _strlen - Returns the length of a string.
+ * @str: The string to measure.
+ *
+ * Return: The length of the string.
+ */
+unsigned int _strlen(const char *str)
+{
+unsigned int len = 0;
+while (str[len])
+len++;
+return (len);
+}
+
+/**
+ * add_node_end - Adds a new node at the end of a list_t list.
+ * @head: A double pointer to the head of the list_t list.
+ * @str: The string to be duplicated and added to the list.
+ *
+ * Return: The address of the new element, or NULL if it failed.
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
 list_t *n_node, *temp;
@@ -29,7 +43,7 @@ return (NULL);
 }
 
 n_node->str = dup_str;
-n_node->len = strlen(dup_str);
+n_node->len = _strlen(dup_str);
 n_node->next = NULL;
 
 if (*head == NULL)
